@@ -1,0 +1,727 @@
+* {
+  box-sizing: border-box;
+  /* border: 1px dashed blue; */
+}
+
+body {
+  margin: 0 auto;
+  font-family: 'Roboto Condensed', 'Roboto', Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  max-width: 1366px;
+  background-color: #EEE;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: #015987;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #F65425;
+}
+
+/*
+  Navigation header styles
+*/
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 15px;
+  background-color: rgba(238,238,238,.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
+.logo img {
+  max-width: 75px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.nav-item {
+  margin-left: 2rem;
+  font-size: 90%;
+}
+
+.nav-item a {
+  font-weight: 700;
+}
+
+#mobile-menu-button {
+  display: none;
+}
+
+.subnav {
+  display: none;
+  position: absolute;
+  padding: 5px;
+  width: 220px;
+  margin-top: 15px;
+  background-color: #EEE;
+  z-index: 1;
+}
+
+.subnav-item {
+  margin: 10px 3px;
+}
+
+.subnav-item a {
+  font-weight: 400;
+}
+
+/* .events-nav:hover .event-menu {
+  display: block;
+} */
+
+/*
+  hero banner styles, includes images for each page and the h1 & h3 text styles
+*/
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  margin-top: 67px;
+}
+
+.hero h1 {
+  font-size: 300%;
+  color: white;
+  background-color: rgba(0,0,0,0.5);
+  margin: 1% 0;
+  padding: .5% 2%;
+}
+
+.hero h3 {
+  font-size: 150%;
+  color: white;
+  background-color: rgba(0,0,0,0.5);
+  margin: 0;
+  padding: .5% 1%;
+}
+
+.homepage {
+  background-image: url("../images/pavilion-wide.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.about-us {
+  background-image: url("../images/0518191610a-pavilion-back-wide.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.about-columbus-park {
+  background-image: url("../images/0518191513c-ball-field-wide.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.events {
+  background-image: url("../images/0518191231-lion-dance-summer-field-day.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.news {
+  background-image: url("../images/chinatown-ny-streets.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.contact {
+  background-image: url("../images/group.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.sports-for-kids {
+  background-image: url("../images/basketball-kid-smiling.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/*
+  styles for the main section of each page, between the hero and the footer - primary components
+*/
+
+.main {
+  padding: 1% 2% 6% 2%;
+  background-color: white;
+}
+
+h2 {
+  font-size: 200%;
+  color: #DD1810;
+  margin: 1% 0;
+}
+
+h4 {
+  font-size: 120%;
+  font-weight: 700;
+  color: #DD1810;
+  margin: 2% 0;
+}
+
+.section {
+  padding: 2% 2%;
+}
+
+.section-title {
+  text-align: center;
+  padding: 1% 8%;
+}
+
+hr.section-divider {
+  border: 5px solid #F65425;
+  width: 85%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+/*
+  styles for the call to action component of each section, buttons to navigate throughout the site
+*/
+
+.calltoaction {
+  text-align: center;
+  /* padding: 1% 0; */
+}
+
+button {
+  background-color: #015987;
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+  padding: 1% 3%;
+  font-weight: 700;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  /* margin-bottom: 10px; */
+}
+
+button:hover {
+  background-color: #1976a7;
+}
+
+
+/*
+  styles for text-based elements
+*/
+
+p.caption {
+  text-align: center;
+  font-size: .8rem;
+  line-height: 1rem;
+  font-style: italic;
+}
+
+p.calltoaction a {
+  text-decoration: none;
+  color: #015987;
+  font-weight: 700;
+  font-size: 1.1rem;
+  /* margin: 5px 0; */
+  letter-spacing: .05rem;
+}
+
+p.calltoaction {
+  text-decoration: none;
+  color: #015987;
+  font-weight: 700;
+  font-size: 1.1rem;
+  /* margin: 5px 0; */
+  letter-spacing: .05rem;
+}
+
+span.emphasis {
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+span.bold {
+  font-weight: 700;
+}
+
+li {
+  margin-bottom: .5rem;
+}
+
+/*
+  styles for the two-column containers within a section
+*/
+
+.two-column-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1% 4%;
+}
+
+.two-column-module {
+  width: 45%;
+  margin: 10px 10px;
+  line-height: 1.5em;
+}
+
+.two-column-image {
+  text-align: center;
+}
+
+.two-column-text {
+
+}
+
+.two-column-module h4 {
+  text-align: center;
+}
+
+/*
+  styles for a three-column container within a section
+*/
+
+.three-column-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 2% 2%;
+}
+
+.three-column-module {
+  width: 32%;
+  padding: 1%;
+  text-align: center;
+}
+
+.three-column-module ul {
+  list-style-type: none;
+  padding: 15px;
+}
+
+.three-column-module.three-column-text {
+  text-align: left;
+  padding: 0;
+}
+
+/*
+  styles for the four-column container within a section
+*/
+
+.four-column-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 1% 2%;
+}
+
+.four-column-module {
+  width: 23%;
+}
+
+.four-column-container hr {
+  margin: 5px;
+  border: 1px solid #EEE;
+}
+
+/*
+  styles for a single column container within a section
+*/
+
+.single-column {
+  padding: 1% 3%;
+}
+
+.single-column h4 {
+  text-align: center;
+}
+
+
+/*
+  styles for a sidebar container within a section
+*/
+
+.thirds-sidebar-container {
+  display: flex;
+  justify-content: space-between;
+  /* margin-bottom: 30px; */
+  padding: 1% 3%;
+}
+
+.two-thirds-module {
+  width: 63%;
+}
+
+.sidebar-module {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  background-color: #EEE;
+  text-align: center;
+}
+
+/*
+  styles for a picture gallery / carousel container
+*/
+
+.picture-gallery-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 2% 3% 1% 3%;
+  flex-wrap: wrap;
+  background-color: #EEE;
+  margin-bottom: 3%;
+}
+
+.picture-module {
+  margin-right: 10px;
+  margin-left: 10px;
+  width: 22%;
+}
+
+.picture-module p.caption {
+  margin-top: .4rem;
+  /* margin-bottom: 1rem; */
+}
+
+.button-after-image {
+  margin-top: 2%;
+}
+
+/*
+  image styles for specific pages
+*/
+
+img.smaller {
+  width: 90%;
+  display: inline-block;
+}
+
+.cta-bar {
+  display: inline-block;
+  width: 100%;
+  background-color: rgba(1,89,135,.1);
+  margin: 0;
+}
+
+.cta-bar p {
+  margin: .5rem;
+}
+
+a:hover .cta-bar {
+  background-color: rgba(1,88,135,.5);
+}
+
+.two-column-text .cta-bar {
+  margin: 2% 10%;
+  width: 80%;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+
+/*
+  officers section on contact page
+*/
+
+img.officer {
+  width: 60%;
+  display: inline-block;
+}
+
+.officers {
+  text-align: center;
+}
+
+.officers p {
+  margin: .5em;
+}
+
+.center {
+  text-align: center;
+}
+
+/*
+  footer section styles
+*/
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px #F65425 solid;
+  padding: 40px 0 100px 0;
+  background-color: rgba(238,238,238,.9);
+}
+
+.footer {
+  text-align: center;
+}
+
+/*   Breakpoints for responsive design */
+
+/*
+  Large devices (desktops, 992px and down)
+*/
+
+@media only screen and (max-width: 992px) {
+
+  .two-column-container {
+    flex-wrap: wrap;
+    padding: 1% 2%;
+    justify-content: center;
+  }
+
+  .two-column-text {
+    width: 95%;
+  }
+
+  .two-column-image {
+    width: 75%;
+  }
+
+  .sidebar-module {
+    background-color: white;
+  }
+
+}
+
+/*
+  Medium devices (tablets, 768px and down)
+*/
+
+@media only screen and (max-width: 768px) {
+
+  .nav-item {
+    margin-left: 1rem;
+  }
+  .hero h1 {
+    font-size: 250%;
+  }
+
+  .hero h3 {
+    font-size: 125%;
+  }
+
+  h2 {
+    font-size: 150%;
+  }
+
+  .two-column-image {
+    width: 60%;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 2% 4%;
+  }
+
+  .three-column-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .three-column-textandimage {
+    width: 90%;
+  }
+
+  .three-column-textandimage img {
+    width: 50%;
+  }
+
+  .three-column-textandimage .cta-bar {
+    margin-top: 1%;
+    margin-bottom: 2%;
+    width: 50%;
+  }
+
+  .three-column-text {
+    width: 100%;
+  }
+
+  .three-column-text ul {
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  .thirds-sidebar-container {
+    display: block;
+  }
+
+  .two-thirds-module {
+    width: 100%;
+  }
+
+  .two-thirds-module h4 {
+    text-align: center;
+  }
+
+  .sidebar-module {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 5%;
+  }
+
+  .sidebar-image {
+    width: 48%;
+  }
+
+  .sidebar-image p.caption {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+}
+
+/*
+  Small devices (landscape phone, 576px and down)
+*/
+
+@media only screen and (max-width: 576px) {
+
+  .hero {
+    height: 200px;
+  }
+
+  .hero h1 {
+    font-size: 180%;
+    width: 80%;
+    text-align: center;
+  }
+
+  .hero h3 {
+    font-size: 125%;
+    text-align: center;
+    width: 80%;
+  }
+
+  h2 {
+    font-size: 125%;
+  }
+
+  .section-title {
+    padding: 1% 0;
+  }
+
+  .single-column {
+    padding: 1% 0;
+  }
+
+  .two-column-container {
+    padding: 1% 0;
+  }
+
+  .two-column-image {
+    width: 75%;
+  }
+
+  .three-column-container {
+    padding: 2% 0;
+  }
+
+  .three-column-module {
+    width: 75%;
+  }
+
+  .three-column-textandimage {
+    width: 100%;
+  }
+
+  .three-column-textandimage img {
+    width: 75%;
+  }
+
+  .three-column-textandimage .cta-bar {
+    margin-top: 1%;
+    margin-bottom: 2%;
+    width: 75%;
+  }
+
+  .thirds-sidebar-container {
+    padding: 1% 0;
+  }
+
+  .sidebar-module {
+    justify-content: center;
+  }
+
+  .sidebar-image {
+    width: 75%;
+  }
+
+  .four-column-container {
+    flex-wrap: wrap;
+  }
+
+  .officers {
+    width: 40%;
+  }
+
+  img.officer {
+    margin-bottom: 15%;
+  }
+
+  .header-container {
+    flex-wrap: wrap;
+    padding: 5px 8px;
+  }
+
+  #mobile-menu-button {
+    display: block;
+  }
+
+  .nav-container {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    background-color: #c7c7c7;
+    padding: 0 0;
+  }
+
+  .nav-container.showing {
+    padding: 10px 0;
+    transition: all 500ms ease-in-out;
+    max-height: 500px;
+
+  }
+
+  .nav-container.hiding {
+    transition: all 500ms ease-in-out;
+    max-height: 0px;
+  }
+
+  .nav-item {
+    text-align: center;
+    margin: 0%;
+    padding: 5px;
+  }
+
+
+}
