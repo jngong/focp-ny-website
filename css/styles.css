@@ -56,6 +56,9 @@ a:hover {
 .nav-item {
   margin-left: 2rem;
   font-size: 90%;
+  position: relative;
+  display: inline-block;
+  padding: 18px 0;
 }
 
 .nav-item a {
@@ -84,9 +87,9 @@ a:hover {
   font-weight: 400;
 }
 
-/* .events-nav:hover .event-menu {
+.nav-item:hover .subnav {
   display: block;
-} */
+}
 
 /*
   hero banner styles, includes images for each page and the h1 & h3 text styles
