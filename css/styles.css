@@ -56,8 +56,8 @@ a:hover {
 .nav-item {
   margin-left: 2rem;
   font-size: 90%;
-  position: relative;
-  display: inline-block;
+  /* position: relative;
+  display: inline-block; */
   padding: 18px 0;
 }
 
@@ -69,7 +69,7 @@ a:hover {
   display: none;
 }
 
-.subnav {
+/* .subnav {
   display: none;
   position: absolute;
   padding: 5px;
@@ -77,9 +77,9 @@ a:hover {
   margin-top: 15px;
   background-color: #EEE;
   z-index: 1;
-}
+} */
 
-.subnav-item {
+/* .subnav-item {
   margin: 10px 3px;
 }
 
@@ -89,7 +89,7 @@ a:hover {
 
 .nav-item:hover .subnav {
   display: block;
-}
+} */
 
 /*
   hero banner styles, includes images for each page and the h1 & h3 text styles
