@@ -712,7 +712,6 @@ img.officer {
     padding: 10px 0;
     transition: all 500ms ease-in-out;
     max-height: 500px;
-
   }
 
   .nav-container.hiding {
@@ -740,6 +739,22 @@ img.officer {
     display: block;
     position: relative;
     width: 100%;
+  }
+
+}
+
+/*
+  Small devices (vertical phone, 400px and down)
+*/
+
+@media only screen and (max-width: 400px) {
+  .nav-item {
+    padding: 3px 10px;
+    width: 85%;
+  }
+
+  .subnav-item {
+    margin: 5px 2px;
   }
 
 }
