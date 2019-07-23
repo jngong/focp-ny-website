@@ -104,7 +104,6 @@ a:hover {
   margin-top: 67px;
   background: rgb(2,0,36);
   background: linear-gradient(60deg, rgba(2,0,36,1) 0%, rgba(1,89,135,1) 60%, rgba(0,212,255,1) 100%);
-  /* background-color: #015987; */
 }
 
 .hero h1 {
@@ -121,6 +120,11 @@ a:hover {
   background-color: rgba(0,0,0,0.5);
   margin: 0;
   padding: .5% 1%;
+}
+
+.blue-gradient {
+  background: rgb(2,0,36);
+  background: linear-gradient(60deg, rgba(2,0,36,1) 0%, rgba(1,89,135,1) 60%, rgba(0,212,255,1) 100%);
 }
 
 .homepage {
