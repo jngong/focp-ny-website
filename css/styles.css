@@ -409,7 +409,7 @@ li {
   display: flex;
   flex-direction: column;
   width: 33%;
-  background-color: #EEE;
+  /* background-color: #EEE; */
   text-align: center;
 }
 
