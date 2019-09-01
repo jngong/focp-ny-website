@@ -279,6 +279,10 @@ span.bold {
   font-weight: 700;
 }
 
+span.italic {
+  font-style: italic;
+}
+
 li {
   margin-bottom: .5rem;
 }
