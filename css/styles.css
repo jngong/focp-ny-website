@@ -411,6 +411,7 @@ li {
   width: 33%;
   /* background-color: #EEE; */
   text-align: center;
+  align-items: center;
 }
 
 /*
@@ -450,6 +451,10 @@ img.smaller {
   display: inline-block;
 }
 
+img.in-memory {
+  margin-top: 5%;
+  width: 65%;
+}
 .cta-bar {
   display: inline-block;
   width: 100%;
